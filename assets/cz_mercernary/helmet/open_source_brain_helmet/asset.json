@@ -1,0 +1,37 @@
+{
+  "name": "open_source_brain_helmet",
+  "i18n": {
+    "en": "Open-Source_Brain",
+    "es": "Cerebro de Fuente Abierta"
+  },
+  "tags": [
+    "helmet",
+    "brain",
+    "opensource",
+    "corona",
+    "zombies"
+   ],
+  "category": "helmet",
+  "replaces": [
+    "hat",
+    "top_head"
+
+   ],
+   "hides": [
+    "hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Hair_OpenSource.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "M_Hair_OpenSource.glb"}
+  ],
+  "rarity": "legendary",
+  "description": ""
+}

@@ -38,9 +38,9 @@ export async function runMain(collectionFolders: string[]) {
 
     console.log(`Found ${categoryFolders.length} categories with ${assetFolders.length} assets in total...`)
 
-    console.log(`Output folder is set to ${'dist'}. Copying files...`)
+    console.log(`Output folder is set to ${'public'}. Copying files...`)
     try {
-      mkdirSync(join(__dirname, '..', 'dist'))
+      mkdirSync(join(__dirname, '..', 'public'))
     } catch (e) {
       // skip
     }
@@ -59,7 +59,7 @@ export async function runMain(collectionFolders: string[]) {
   }
 
   const jsonResult = JSON.stringify(allResponses, null, 2)
-  const distAbsPath = resolve(join(__dirname, '..', 'dist'))
+  const distAbsPath = resolve(join(__dirname, '..', 'public'))
 
   writeFileSync(join(distAbsPath, 'expected.json'), jsonResult)
   writeFileSync(join(distAbsPath, 'index.json'), jsonResult)
